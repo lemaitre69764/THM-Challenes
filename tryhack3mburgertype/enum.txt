@@ -1,0 +1,58 @@
+       │ File: output_enum.txt
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ # Nmap 7.94SVN scan initiated Tue Feb  4 13:39:24 2025 as: /usr/lib/nmap/nmap -sC -sV -T4 -oN output_enum.txt 10.10.94.169
+   2   │ Nmap scan report for 10.10.94.169
+   3   │ Host is up (0.11s latency).
+   4   │ Not shown: 998 closed tcp ports (reset)
+   5   │ PORT   STATE SERVICE VERSION
+   6   │ 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+   7   │ | ssh-hostkey:
+   8   │ |   3072 ed:08:65:bd:27:df:7e:80:5a:1b:9e:ec:df:a5:0a:9b (RSA)
+   9   │ |   256 81:36:24:0d:b8:68:42:8d:b5:29:d2:8a:da:45:e3:7d (ECDSA)
+  10   │ |_  256 14:b8:fa:e9:7e:b2:67:24:94:5c:f8:5a:0e:c1:af:d5 (ED25519)
+  11   │ 80/tcp open  http    Werkzeug/3.0.2 Python/3.8.10
+  12   │ |_http-title: Burg3rByte
+  13   │ | fingerprint-strings:
+  14   │ |   GetRequest:
+  15   │ |     HTTP/1.1 200 OK
+  16   │ |     Server: Werkzeug/3.0.2 Python/3.8.10
+  17   │ |     Date: Tue, 04 Feb 2025 08:39:32 GMT
+  18   │ |     Content-Type: text/html; charset=utf-8
+  19   │ |     Content-Length: 12703
+  20   │ |     Connection: close
+  21   │ |     <!DOCTYPE html>
+  22   │ |     <html lang="en">
+  23   │ |     <head>
+  24   │ |     <meta charset="utf-8">
+  25   │ |     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  26   │ |     <title>Burg3rByte</title>
+  27   │ |     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  28   │ |     <link rel="stylesheet" href="/static/css/stylesheet.css">
+  29   │ |     </head>
+  30   │ |     <body>
+  31   │ |     <nav class="navbar navbar-light navbar-expand-md py-3">
+  32   │ |     <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span style="padding-right: 0px;">Burg3rByte</span></a><button data-toggle
+       │ ="collapse" class="navbar-toggler" data-target="#navcol-4"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+  33   │ |   HTTPOptions:
+  34   │ |     HTTP/1.1 200 OK
+  35   │ |     Server: Werkzeug/3.0.2 Python/3.8.10
+  36   │ |     Date: Tue, 04 Feb 2025 08:39:33 GMT
+  37   │ |     Content-Type: text/html; charset=utf-8
+  38   │ |     Allow: OPTIONS, HEAD, GET
+  39   │ |     Content-Length: 0
+  40   │ |     Connection: close
+  41   │ |   RTSPRequest:
+  42   │ |     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  43   │ |     "http://www.w3.org/TR/html4/strict.dtd">
+  44   │ |     <html>
+  45   │ |     <head>
+  46   │ |     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  47   │ |     <title>Error response</title>
+  48   │ |     </head>
+  49   │ |     <body>
+  50   │ |     <h1>Error response</h1>
+  51   │ |     <p>Error code: 400</p>
+  52   │ |     <p>Message: Bad request version ('RTSP/1.0').</p>
+  53   │ |     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+  54   │ |     </body>
+  55   │ |_    </html>
