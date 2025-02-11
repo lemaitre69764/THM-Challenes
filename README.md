@@ -1,5 +1,5 @@
 # THM-Challenges
-
+![](images/THM-Header.png)
 This repository contains peylogs, exploits, and notes related to the machines I go through on TryHackMe.  
 
 ##  Contents
