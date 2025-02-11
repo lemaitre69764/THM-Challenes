@@ -4,7 +4,7 @@ import argparse
 parser = argparse.ArgumentParser(description="BOF Exploit")
 parser.add_argument("host", help="The host IP address")
 parser.add_argument("port", help="The host port")
-arsg = parser.parse_args()
+args = parser.parse_args()
 
 """
 read & write
