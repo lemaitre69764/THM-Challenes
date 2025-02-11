@@ -36,3 +36,5 @@ read("4") #listen for the end of the welcome message
 write("3") #pick option 3 to receive our secret directory
 read("\n") #work around to get rid of the newline preceeding response
 print(tn.read_until("\n".encode()).decode()) #output the directory
+
+#in new version of interp telnet isn't working
